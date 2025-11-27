@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "762334067962",
+    "project_id": "ehr-system-13d43",
+    "storage_bucket": "ehr-system-13d43.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762334067962:android:26181b74207bc25bd85d43",
+        "android_client_info": {
+          "package_name": "com.example.ehr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBINHow1HzklGVWXBHuKvHF7JQviSMYrcs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
