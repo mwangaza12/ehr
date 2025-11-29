@@ -1,5 +1,8 @@
+import 'package:ehr/providers/auth_provider.dart';
+import 'package:ehr/providers/patient_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:ehr/constants/app_colors.dart';
+import 'package:provider/provider.dart';
 import '../patients/patients_page.dart';
 import '../ai/ai_assistant_page.dart';
 import '../profile/profile_page.dart';
@@ -20,6 +23,11 @@ class _DashboardState extends State<Dashboard> {
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final authProvider = context.read<AuthProvider>();
+      final patientProvider = context.read<PatientProvider>();
+      patientProvider.initializeWithAuth(authProvider);
+    });
 
     screens = [
       _buildHome(),       // Home tab shows the dashboard content

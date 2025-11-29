@@ -1,6 +1,6 @@
 import 'package:ehr/app/auth_services.dart';
 import 'package:ehr/constants/app_colors.dart';
-import 'package:ehr/pages/auth/login_page.dart';
+import 'package:ehr/screens/auth/login_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 

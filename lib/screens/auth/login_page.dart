@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ehr/constants/app_colors.dart';
 import 'package:ehr/app/auth_services.dart';
-import 'package:ehr/pages/auth/register_page.dart';
+import 'package:ehr/screens/auth/register_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class LoginPage extends StatefulWidget {

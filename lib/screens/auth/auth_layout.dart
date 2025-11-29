@@ -1,6 +1,6 @@
 import 'package:ehr/app/auth_services.dart';
-import 'package:ehr/pages/auth/login_page.dart';
-import 'package:ehr/pages/home/dashboard.dart';
+import 'package:ehr/screens/auth/login_page.dart';
+import 'package:ehr/screens/home/dashboard.dart';
 import 'package:flutter/material.dart';
 
 class AuthLayout extends StatelessWidget {
