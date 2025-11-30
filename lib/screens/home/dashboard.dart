@@ -49,7 +49,7 @@ class _DashboardState extends State<Dashboard> {
 
   Widget _buildHome() {
     return Scaffold(
-      backgroundColor: const Color(0xFFF5F7FA),
+      backgroundColor: AppColors.primaryDark,
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
