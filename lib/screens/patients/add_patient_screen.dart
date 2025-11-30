@@ -1,7 +1,3 @@
-// ============================================
-// FILE: lib/screens/patients/add_patient_screen.dart
-// ============================================
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:ehr/providers/patient_provider.dart';
