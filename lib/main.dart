@@ -1,4 +1,5 @@
 import 'package:ehr/providers/auth_provider.dart';
+import 'package:ehr/providers/sync_provider.dart';
 import 'package:ehr/providers/visit_provider.dart';
 import 'package:ehr/screens/auth/auth_layout.dart';
 import 'package:ehr/providers/patient_provider.dart';
@@ -25,6 +26,8 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => AuthProvider()),
         ChangeNotifierProvider(create: (_) => PatientProvider()),
         ChangeNotifierProvider(create: (_) => VisitProvider()),
+        ChangeNotifierProvider(create: (_) => SyncProvider()),
+
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
