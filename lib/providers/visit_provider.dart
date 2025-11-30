@@ -1,4 +1,5 @@
 import 'package:ehr/model/visit.dart';
+import 'package:ehr/providers/auth_provider.dart';
 import 'package:flutter/foundation.dart';
 import 'package:uuid/uuid.dart';
 import 'package:ehr/services/database_helper.dart';
@@ -166,5 +167,11 @@ class VisitProvider extends ChangeNotifier {
 
   void _clearError() {
     _error = null;
+  }
+  void initializeWithAuth(AuthProvider authProvider) {
+    if (authProvider.isLoggedIn && authProvider.userId != null) {
+      setCurrentUser(authProvider.userId!);
+      loadVisits();
+    }
   }
 }

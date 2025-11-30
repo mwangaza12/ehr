@@ -1,5 +1,6 @@
 import 'package:ehr/providers/auth_provider.dart';
 import 'package:ehr/providers/patient_provider.dart';
+import 'package:ehr/providers/visit_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:ehr/constants/app_colors.dart';
 import 'package:provider/provider.dart';
@@ -26,7 +27,10 @@ class _DashboardState extends State<Dashboard> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       final authProvider = context.read<AuthProvider>();
       final patientProvider = context.read<PatientProvider>();
+      final visitProvider = context.read<VisitProvider>();
+
       patientProvider.initializeWithAuth(authProvider);
+      visitProvider.initializeWithAuth(authProvider);
     });
 
     screens = [

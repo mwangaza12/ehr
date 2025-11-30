@@ -22,6 +22,9 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     final path = join(dbPath, 'clinicconnect.db');
 
+    // DELETE THIS AFTER TESTING - Only for development
+    await deleteDatabase(path);
+
     return await openDatabase(
       path,
       version: 1,
