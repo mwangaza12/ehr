@@ -15,7 +15,7 @@ class SyncButton extends StatelessWidget {
             IconButton(
               icon: Icon(
                 syncProvider.isOnline ? Icons.cloud_done : Icons.cloud_off,
-                color: syncProvider.isOnline ? Colors.green : Colors.orange,
+                color: syncProvider.isOnline ? const Color.fromARGB(255, 144, 238, 147) : Colors.orange,
               ),
               onPressed: () {
                 Navigator.push(

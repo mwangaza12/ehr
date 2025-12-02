@@ -49,10 +49,10 @@ class _DashboardState extends State<Dashboard> {
 
   Widget _buildHome() {
     return Scaffold(
-      backgroundColor: AppColors.primaryDark,
+      backgroundColor: const Color(0xFFF5F7FA),
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.transparent,
+        backgroundColor: AppColors.primaryDark,
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -60,7 +60,7 @@ class _DashboardState extends State<Dashboard> {
               'Welcome Back',
               style: TextStyle(
                 fontSize: 14,
-                color: Colors.grey.shade600,
+                color: AppColors.grey,
                 fontWeight: FontWeight.normal,
               ),
             ),
@@ -70,7 +70,7 @@ class _DashboardState extends State<Dashboard> {
                   authProvider.userEmail?.split('@')[0] ?? 'Doctor',
                   style: TextStyle(
                     fontSize: 20,
-                    color: AppColors.primaryDark,
+                    color: AppColors.white,
                     fontWeight: FontWeight.bold,
                   ),
                 );
