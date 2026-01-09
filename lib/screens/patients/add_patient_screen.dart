@@ -155,7 +155,7 @@ class _AddPatientScreenState extends State<AddPatientScreen> {
 
               // Gender
               DropdownButtonFormField<String>(
-                value: _selectedGender,
+                initialValue: _selectedGender,
                 decoration: _buildInputDecoration('Gender'),
                 items: _genders.map((gender) {
                   return DropdownMenuItem(

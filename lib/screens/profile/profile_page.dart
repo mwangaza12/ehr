@@ -10,7 +10,7 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final user = authService.value.currentUser;
 
-    Future<void> _confirmLogout() async {
+    Future<void> confirmLogout() async {
       final shouldLogout = await showDialog<bool>(
         context: context,
         builder: (context) => AlertDialog(
@@ -126,7 +126,7 @@ class ProfilePage extends StatelessWidget {
                           Icons.logout_outlined,
                           "Logout",
                           isLogout: true,
-                          onTap: _confirmLogout, // ✅ show confirmation dialog
+                          onTap: confirmLogout, // ✅ show confirmation dialog
                         ),
                       ],
                     ),
