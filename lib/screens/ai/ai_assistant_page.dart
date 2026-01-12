@@ -524,7 +524,7 @@ List<Widget> _buildModelOptions(StateSetter setState) {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: AppColors.primaryDark,
         elevation: 1,
         centerTitle: false,
         title: Column(
