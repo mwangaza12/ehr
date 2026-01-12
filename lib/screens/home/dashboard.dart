@@ -257,10 +257,7 @@ class _DashboardState extends State<Dashboard> {
               ),
               label: "Patients",
             ),
-            const BottomNavigationBarItem(
-              icon: SizedBox.shrink(),
-              label: "",
-            ),
+    
             BottomNavigationBarItem(
               icon: Container(
                 padding: const EdgeInsets.all(8),
